@@ -1,0 +1,123 @@
+/* About Page Specific Styles */
+.page-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 80px;
+}
+
+.our-story {
+  padding: 100px 0;
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.story-text h2 {
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.story-text p {
+  margin-bottom: 20px;
+}
+
+.story-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.our-values {
+  padding: 100px 0;
+  background: var(--light-color);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.value-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+}
+
+.value-card i {
+  font-size: 40px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.team {
+  padding: 100px 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.position {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .story-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .story-text h2 {
+    text-align: center;
+  }
+}

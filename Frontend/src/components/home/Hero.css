@@ -1,0 +1,133 @@
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200') no-repeat center center/cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+  position: relative;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: inherit;
+}
+
+.hero h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: inherit;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  color: inherit;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.stat-item {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  transition: var(--transition);
+}
+
+.stat-item:hover .stat-number {
+  transform: scale(1.1);
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: var(--transition);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: transparent;
+  color: white;
+  transform: translateY(-3px) scale(1.05);
+  border: 2px solid white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.counting-animation {
+  animation: pulse 1s ease-out;
+}
+
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero {
+    background-position: 60% center;
+  }
+}
