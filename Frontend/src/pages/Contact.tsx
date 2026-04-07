@@ -152,7 +152,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     setIsSubmitting(true);
 
     try {
-    const apiUrl = 'https://college-finder-5wrk.onrender.com';
+    const apiUrl = 'https://college-finder-backend-frlx.onrender.com';
     console.log("Attempting to call:", apiUrl); // Debug API URL
     
     const response = await fetch(apiUrl, {
